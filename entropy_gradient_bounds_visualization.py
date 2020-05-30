@@ -46,7 +46,7 @@ x_cons_valid = np.logical_and(x >= a, x <= b)
 
 ############### Plot 1: w entropy gradients ###############
 ax[0, 0].plot(x, grad_H_sc, label='Strong Convexity')
-ax[0, 0].plot(x, grad_H_ind, label = r'Independent $w$')
+ax[0, 0].plot(x, grad_H_ind, label = r'Independent $\mathsf{w}$')
 ax[0, 0].plot(x[x_cons_valid], grad_H_cons_lb[x_cons_valid], color=palette[2],
          linestyle='--')
 ax[0, 0].plot(x[x_cons_valid], grad_H_cons_ub[x_cons_valid], color=palette[2],
