@@ -15,8 +15,12 @@ for N in [100,200,500,1000,2000]: ## T is set to N
     T = np.arange(1,N)
     # sens = np.loadtxt(open('./finalstream/sens_stream_N'+str(N)+'.txt', 'rb'), delimiter=' ')[:-1]
     spec = np.loadtxt(open('./finalstream/spec_stream_N'+str(N)+'.txt', 'rb'), delimiter=' ')[:-1]
-    g = sns.lineplot(T/T[-1], spec, label=r'$N={}$'.format(N), color=palette[i])
+    sns.lineplot(T/T[-1], spec, label=r'$N={}$'.format(N), color=palette[i])
     i+=1
+
+T = np.arange(1,3000)
+spec = np.loadtxt(open('./finalstream/spec_adapt_ab05_N10k_T3k.txt', 'rb'), delimiter=' ')[:-1]
+g = sns.lineplot(T/10000, spec, label=r'$N=10000$', color='black')
     
 ax1 = plt.gca()
 ax1.set_xlabel('Tests / Number of neurons')#, fontsize=12)
