@@ -6,7 +6,7 @@ A naive approach (left figure) could stimulate each neuron, one at a time, and o
 Using stimulations of small ensembles and a statistical method called group testing, we show in our recent paper (https://arxiv.org/abs/2007.13911) that this is now feasible even in networks of up to 10 thousand neurons: 10^8 connections! 
 Check out the comparison of our method (right) below:
 
-![](https://web.duke.edu/mind/level2/faculty/pearson/assets/videos/stim/Duke_logo.gif)
+![](https://dibs-web01.vm.duke.edu/pearson/assets/videos/stim/Duke_logo.gif)
 
 ## Requirements
 Our algorithm is implemented using only a few libraries: numpy, cupy (for GPU), and matplotlib (for plotting). We used python version 3.6.10 and conda to install these libraries. 
